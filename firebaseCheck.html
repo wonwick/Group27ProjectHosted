@@ -1,0 +1,39 @@
+  <html>
+
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  </head>
+  <script>
+    var config = {
+      apiKey: "AIzaSyDEUlmbMLmmJqhiNZZ8he1_muiSTRkWins",
+      authDomain: "sparktectaskmodule.firebaseapp.com",
+      databaseURL: "https://sparktectaskmodule.firebaseio.com",
+      storageBucket: "sparktectaskmodule.appspot.com"
+    };
+    firebase.initializeApp(config);
+    var text_TaskName = document.getElementById("text_TaskName");
+
+    function submitClick() {
+      var firebaseref = firebase.database().ref("availableTasks");
+      var newPostRef = firebaseref.push();
+      var key = String(newPostRef.key);
+      newPostRef.set({
+        id: key,
+        name: "repair obd scanner",
+        address: "63/22A,KAndy Road,Imbulgoda",
+        contactName: "Mr.Waruna",
+        contactNumber: "0775676543",
+        description: "repair the obd reader model 365   given to waruna",
+        langtitute: 7,
+        logtitute: 80
+      });
+      window.alert("task successfully added.");
+    }
+  </script>
+
+  <body>
+    <button id=button_submit onclick="submitClick()"></button>
+  </body>
+
+  </html>

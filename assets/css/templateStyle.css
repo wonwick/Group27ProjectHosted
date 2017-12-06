@@ -1,0 +1,107 @@
+body {
+    padding-top:65px;
+}
+
+@media (min-width: 979px) {
+
+    #midCol.affix-top {
+        position:fixed;
+        width:265px;
+        margin-right:10px;
+
+    }
+
+    #midCol.affix {
+        position:static;
+        width:100%;
+    }
+
+}
+
+@media (min-width: 767px) {
+    .affix,.affix-top {
+        position:fixed;
+    }
+}
+
+#left-nav{
+    background-color: rgba(0, 0, 0, 0.84);
+    width: 230px;
+    height: 700px;
+
+    top:60px;
+    left:0px;
+
+}
+
+.wrapper{
+
+
+}
+
+#content{
+    top:-10px;
+    height: auto;
+    background-color: ;
+    margin-top: -20px;
+    margin-left: -20px;
+
+}
+
+#content-hr{
+
+    position: absolute;
+    left: 0;
+    top : -10px;
+    width: 100%;
+    margin: 0;
+
+
+
+}
+#topNav {
+    background-color: #0f0f0f;
+    height:65px;
+
+
+
+}
+
+
+#logo{
+
+   margin-top: -10px;
+    margin-left: 5px;px;
+}
+
+#nav-with-content{
+    width: 900px;
+    top: -10px;
+
+
+
+}
+
+#ul-class li i{
+    margin-right: 15px;
+
+
+}
+
+#ul-class li {
+    margin-top: 20px;
+
+
+}
+
+#cont{
+    margin-left: 30px;
+    margin-top : 10px
+
+
+}
+
+#imagg{
+
+margin-left: -40px;
+}
